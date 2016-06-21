@@ -61,7 +61,8 @@ class RestService {
       requestCustomizer = {}
 
     //auto detect registry protocol
-    def protoList = ['http', 'https']
+    //def protoList = ['http', 'https']
+    def protoList = ['https']
     for (proto in protoList) {
       def url = "$proto://${host}:${port}/v2"
       log.info "Trying to connect $url"
